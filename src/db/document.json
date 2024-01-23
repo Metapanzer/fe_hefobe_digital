@@ -1,9 +1,0 @@
-{
-  "id": "random uuid",
-  "accountId": 1,
-  "email": "syifa.testing12@gmail.com",
-  "docName": "surat pernyataan",
-  "status": "SUCCESS/ FAILED/ QUEUE",
-  "createdDate": "2024-01-01T00:00:00.000Z",
-  "modifyDate": "2024-01-01T00:00:00.000Z"
-}
