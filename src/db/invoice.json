@@ -1,0 +1,12 @@
+{
+  "id": "uuid random",
+  "email": "syifa.testing12@gmail.com",
+  "quota": 1,
+  "productPrice": 12000,
+  "ppnPrice": 1300,
+  "total": 13300,
+  "status": "PAID",
+  "qris": "xxx",
+  "createdDate": "2024-01-01T00:00:00.000Z",
+  "modifyDate": "2024-01-01T00:00:00.000Z"
+}
