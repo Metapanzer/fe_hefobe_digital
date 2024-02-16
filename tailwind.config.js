@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         mountain: "url('../../public/images/bg-mountain.svg')",
+        mountainTrans: "url('../../public/images/bg-mountain-0.3.svg')",
       },
     },
   },

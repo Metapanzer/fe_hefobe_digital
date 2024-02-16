@@ -38,7 +38,7 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <nav className="container flex items-center justify-between h-16 px-8 bg-white shadow-md fixed">
+    <nav className="container flex items-center justify-between h-auto px-8 py-4 bg-transparent fixed z-10">
       {isLoggedIn && (
         <span className="text-black font-semibold">
           Halo, {user ? user?.email : "Username"}

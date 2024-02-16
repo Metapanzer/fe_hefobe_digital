@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex h-screen pt-20 pb-8 flex-col items-center justify-between gap-8">
-      <Card size="small" className="">
+    <main className="flex h-screen pt-24 pb-8 flex-col items-center justify-start gap-6 bg-mountainTrans bg-no-repeat bg-contain bg-top">
+      <Card size="small">
         <span className="text-[#156779] font-semibold">Your e-meterai: 0</span>
         <PrimaryButton>Buy Quota</PrimaryButton>
       </Card>
