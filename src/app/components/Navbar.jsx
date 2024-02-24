@@ -46,12 +46,12 @@ export default function Navbar() {
       )}
       <div className="flex gap-4 ml-auto">
         {locWithUploadButton.includes(pathname) && (
-          <PrimaryButton>
+          <PrimaryButton onClick={() => router.push("/upload")}>
             Upload
             <Image src={Upload} alt="Upload" />
           </PrimaryButton>
         )}
-        <PrimaryButton>Faq</PrimaryButton>
+        <PrimaryButton onClick={() => router.push("/faq")}>Faq</PrimaryButton>
         <PrimaryButton
           onClick={() =>
             isLoggedIn
