@@ -4,6 +4,7 @@ import SecondaryButton from "../components/SecondaryButton";
 import EmeteraiLogo from "../../../public/Images/e-meterai-white-bg.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import axios from "axios";
 
 export default function Page() {
   const router = useRouter();
@@ -12,11 +13,23 @@ export default function Page() {
   function handleChange(e) {
     setData({ ...data, [e.target.name]: e.target.value });
   }
-  function handleSubmit(e) {
+  async function login(data) {
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/api/auth/",
+        data
+      );
+      // console.log(response);
+      localStorage.setItem("user", JSON.stringify(response.data.user));
+      localStorage.setItem("token", JSON.stringify(response.data.token));
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  async function handleSubmit(e) {
     e.preventDefault();
     // TODO : send data to API
-    localStorage.setItem("user", JSON.stringify(data));
-    localStorage.setItem("token", "token123");
+    await login(data);
     router.push("/");
   }
 

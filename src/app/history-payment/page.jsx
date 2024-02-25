@@ -3,7 +3,7 @@ import Card from "../components/Card";
 
 export default function Page() {
   return (
-    <div className="flex h-screen pt-20 flex-col items-center justify-center pt-6 gap-8">
+    <div className="container flex h-screen flex-col items-center justify-center pt-6 gap-8">
       <Card size="large">
         <div>
           <span className="text-[#156779] font-semibold">History Payment</span>

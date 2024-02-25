@@ -10,6 +10,17 @@
       "createdDate": "2024-01-01T00:00:00.000Z",
       "modifyDate": "2024-01-01T00:00:00.000Z",
       "id": 1
+    },
+    {
+      "name": "Krisna Sandy Pribadi",
+      "email": "dummy@gmail.com",
+      "phone": "082123456789",
+      "password": "1234",
+      "userType": "user",
+      "quota": 0,
+      "createdDate": "2024-01-01T00:00:00.000Z",
+      "modifyDate": "2024-01-01T00:00:00.000Z",
+      "id": 2
     }
   ]
 }

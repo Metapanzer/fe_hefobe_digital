@@ -34,11 +34,13 @@ export default function Navbar() {
   }
 
   React.useEffect(() => {
-    checkLogin();
+    if (typeof window !== "undefined") {
+      checkLogin();
+    }
   }, [pathname]);
 
   return (
-    <nav className="container flex items-center justify-between h-auto px-8 py-4 bg-transparent fixed z-10">
+    <nav className="container border border-b-cyan-400 flex items-center justify-between h-auto px-8 py-4 bg-transparent fixed z-10">
       {isLoggedIn && (
         <span className="text-black font-semibold">
           Halo, {user ? user?.email : "Username"}
