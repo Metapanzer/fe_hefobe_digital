@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import SecondaryButton from "../components/SecondaryButton";
-import EmeteraiLogo from "../../../public/Images/e-meterai-white-bg.svg";
+import EmeteraiLogo from "../../../public/images/e-meterai-white-bg.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import axios from "axios";
